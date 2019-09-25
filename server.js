@@ -17,6 +17,6 @@ app.use(history({
 // 2nd call for redirected requests
 app.use(staticFileMiddleware);
 
-app.listen(config.server.port, function () {
+app.listen(process.env.PORT || config.server.port, function () {
   console.log(`Intech Forum is listening on port ${config.server.port}!`);
 });
