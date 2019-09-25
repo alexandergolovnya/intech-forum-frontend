@@ -94,12 +94,13 @@ export default {
         if (this.topicId === undefined) {
           this.$http
             .post(`/topics`, this.entity)
-            .then(() => {
+            .then(resp => {
               this.$emit("created");
               this.entity.title = "";
               this.entity.description = "";
               this.startValidate = false;
               this.$refs.modal.hide();
+              this.$router.push(`/topics/${resp.data.id}`);
             })
             .catch(error => {
               console.log(error);
@@ -135,11 +136,11 @@ export default {
             this.errored = true;
           });
       }
-    },
+    }
   },
 
   mounted() {
-    this.getTopic()
+    this.getTopic();
   }
 };
 </script>
