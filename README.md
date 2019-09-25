@@ -1,6 +1,10 @@
 # Intech Forum Frontend
 Single page application that represents forum, provides CRUD services for topics, topic messages and users.
 
+## Heroku instance
+
+There is an instance of application deployed to Heroku available at https://intech-forum.herokuapp.com
+
 ## Project setup
 ```
 # install dependencies
