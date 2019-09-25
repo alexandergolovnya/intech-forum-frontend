@@ -1,0 +1,12 @@
+{
+    "server": {
+        "port": 3000
+    },
+    "apiServer": {
+      "url": "http://localhost:9000/forum/api/"
+    },
+    "oauth": {
+        "client": "client",
+        "client-secret": "client"
+    }
+}
