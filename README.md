@@ -4,7 +4,7 @@ Single page application that represents forum, provides CRUD services for topics
 ## Project setup
 ```
 # install dependencies
-npm install
+yarn install
 ```
 ## Project configuration
 
@@ -17,19 +17,19 @@ You could define configuration properties for the project at config.json
 ### Compiles and hot-reloads for development
 ```
 # serve with hot reload at localhost:8081
-npm run serve
+yarn serve
 ```
 
 ### Compiles and minifies for production
 ```
 # build for production with minification
-npm run build
+yarn build
 
 # start express static server
-npm run start
+yarn start
 ```
 
-### Admin user
+### Default users for the project
 
 To login with admin rules you can use test user with such credentials:
 - email: admin@admin
@@ -38,6 +38,3 @@ To login with admin rules you can use test user with such credentials:
 To login with user rules you can use this default user:
 - email: user@user
 - password: pass
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
