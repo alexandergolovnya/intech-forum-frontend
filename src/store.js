@@ -64,8 +64,6 @@ export default new Vuex.Store({
         password: password
       };
 
-      console.log(config)
-
       return new Promise((resolve, reject) => {
         commit('auth_request');
         axios.post('/oauth/token', qs.stringify(data), {
@@ -161,7 +159,7 @@ export default new Vuex.Store({
     userFullName: state => state.userFirstName + ' ' + state.userMiddleName + ' ' + state.userLastName,
     userFirstLastName: state => state.userFirstName + ' ' + state.userLastName,
     isAdmin: state => {
-      if (state.userAuthorities.includes === 'ROLE_ADMIN' || state.userAuthorities === 'ROLE_ADMIN') {
+      if (state.userAuthorities.includes == 'ROLE_ADMIN' || state.userAuthorities == 'ROLE_ADMIN') {
         return true;
       }
       else return false;
