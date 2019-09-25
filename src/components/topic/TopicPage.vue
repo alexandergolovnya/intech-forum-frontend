@@ -73,7 +73,7 @@ export default {
       topicMessages: [],
       totalItems: null,
       currentPage: 1,
-      perPage: 3,
+      perPage: 5,
       errored: false
     };
   },

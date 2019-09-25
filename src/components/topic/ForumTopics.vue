@@ -46,7 +46,7 @@ export default {
       topics: null,
       totalItems: null,
       currentPage: 1,
-      perPage: 3,
+      perPage: 10,
       errored: false
     };
   },
